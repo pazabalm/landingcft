@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admisión 2027 | CFT Estatal de Aysén</title>
+  <meta name="description" content="Estudia una carrera de Técnico de Nivel Superior en Puerto Aysén o Coyhaique. Admisión 2027 del CFT Estatal de la Región de Aysén.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;600;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- ponytail: Tailwind por CDN, sin build. Para producción compilar con @tailwindcss/cli -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-display: "Outfit", sans-serif;
+      --font-sans: "Work Sans", sans-serif;
+      --color-marino: #0A1A52;
+      --color-marino-2: #1D4C86;
+      --color-tinta: #262C46;
+      --color-turquesa: #3AB7AC;
+      --color-turquesa-osc: #1F7C74;
+      --color-lima: #DCF26C;
+      --color-niebla: #F2F4F5;
+      --animate-subir: subir .8s cubic-bezier(.2,.7,.2,1) both;
+      @keyframes subir { from { opacity: 0; transform: translateY(16px); } }
+    }
+    @layer base {
+      html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+      body { @apply bg-niebla text-tinta font-sans antialiased; }
+      :focus-visible { @apply outline-3 outline-offset-2 outline-turquesa; }
+    }
+    /* Funde la foto de campaña con el degradado del hero y la lleva hasta el borde derecho */
+    .foto-hero { mask-image: linear-gradient(to bottom, transparent, #000 55%); }
+    @media (min-width: 64rem) {
+      .foto-hero {
+        margin-right: calc(-1 * max(1.5rem, (100vw - 72rem) / 2 + 1.5rem));
+        mask-image: linear-gradient(to right, transparent, #000 20%), linear-gradient(to bottom, transparent, #000 55%);
+        mask-composite: intersect;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded">Saltar al contenido</a>
+
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-tinta/10">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+    <a href="#" class="shrink-0"><img src="img/logo.webp" alt="CFT Estatal Región de Aysén" width="698" height="196" class="h-[2.7rem] w-auto"></a>
+    <nav aria-label="Secciones" class="hidden md:flex gap-8 text-[15px] font-medium">
+      <a href="#carreras" class="hover:text-turquesa-osc">Carreras</a>
+      <a href="#sedes" class="hover:text-turquesa-osc">Sedes</a>
+      <a href="#contacto" class="hover:text-turquesa-osc">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- Hero: el fondo continúa el degradado de la foto de campaña -->
+  <section class="relative overflow-hidden bg-linear-to-br from-marino via-[#102766] to-marino-2 text-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-[1.1fr_1fr] items-end">
+      <div class="pt-14 pb-10 lg:py-28">
+        <p class="motion-safe:animate-subir inline-block rounded-full border-2 border-lima px-4 py-1 font-display font-semibold text-lima">Admisión 2027</p>
+        <h1 class="mt-6 font-display text-[2.6rem] leading-[1.02] sm:text-6xl lg:text-7xl tracking-tight text-balance">
+          <span class="motion-safe:animate-subir block font-extralight [animation-delay:.1s]">Estudia una carrera técnica</span>
+          <span class="motion-safe:animate-subir block font-extrabold [animation-delay:.25s]">sin salir de Aysén</span>
+        </h1>
+        <p class="motion-safe:animate-subir mt-6 max-w-lg text-lg text-white/80 [animation-delay:.4s]">
+          10 carreras de Técnico de Nivel Superior en Puerto Aysén y Coyhaique, en el centro de formación técnica público de la región.
+        </p>
+        <div class="motion-safe:animate-subir mt-8 flex flex-wrap gap-3 [animation-delay:.5s]">
+          <a href="#carreras" class="min-h-12 inline-flex items-center rounded-full border border-white/40 px-7 font-semibold hover:border-white transition-colors">Ver carreras</a>
+        </div>
+      </div>
+      <img src="img/estudiantes.webp" alt="Dos estudiantes del CFT Estatal de Aysén sonriendo" width="924" height="690" fetchpriority="high"
+           class="foto-hero w-full max-w-xl justify-self-end self-end">
+    </div>
+  </section>
+
+  <!-- Propuesta de valor -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 grid gap-10 md:grid-cols-3">
+      <div class="border-t-4 border-turquesa pt-5">
+        <h2 class="font-display text-2xl font-semibold">Público y regional</h2>
+        <p class="mt-2 text-tinta/75">Somos el CFT Estatal de la Región de Aysén. Formamos técnicos para el trabajo que existe aquí.</p>
+      </div>
+      <div class="border-t-4 border-turquesa pt-5">
+        <h2 class="font-display text-2xl font-semibold">Dos sedes</h2>
+        <p class="mt-2 text-tinta/75">Casa Central en Puerto Aysén y sede en Coyhaique, cerca de tu casa y de tu red.</p>
+      </div>
+      <div class="border-t-4 border-turquesa pt-5">
+        <h2 class="font-display text-2xl font-semibold">Título técnico de nivel superior</h2>
+        <p class="mt-2 text-tinta/75">Cada carrera entrega el título de Técnico de Nivel Superior en su especialidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carreras: datos de cftestataldeaysen.cl y los folletos de cada carrera -->
+  <section id="carreras" class="mx-auto max-w-6xl px-4 sm:px-6 py-20">
+    <h2 class="font-display text-4xl sm:text-5xl tracking-tight"><span class="font-extralight">Elige tu</span> <span class="font-extrabold">carrera</span></h2>
+    <p class="mt-3 max-w-xl text-tinta/75">Revisa dónde podrás trabajar al titularte. Cada carrera tiene su folleto con el perfil de egreso completo.</p>
+
+    <div class="mt-12 grid gap-14">
+      <div>
+        <h3 class="flex items-center gap-3 font-display text-[1.2375rem] font-semibold text-turquesa-osc"><span class="grid size-11 shrink-0 place-items-center rounded-xl bg-turquesa/15"><svg aria-hidden="true" class="size-7" viewBox="0 0 256 256" fill="currentColor"><path d="M216,136v80H40V88l64,48V88l64,48Z" opacity="0.2"/><path d="M116,176a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h28A8,8,0,0,1,116,176Zm60-8H148a8,8,0,0,0,0,16h28a8,8,0,0,0,0-16Zm64,48a8,8,0,0,1-8,8H24a8,8,0,0,1,0-16h8V88a8,8,0,0,1,12.8-6.4L96,120V88a8,8,0,0,1,12.8-6.4l38.74,29.05L159.1,29.74A16.08,16.08,0,0,1,174.94,16h18.12A16.08,16.08,0,0,1,208.9,29.74l15,105.13s.08.78.08,1.13v72h8A8,8,0,0,1,240,216Zm-77.86-94.4,8.53,6.4h36.11L193.06,32H174.94ZM48,208H208V144H168a8,8,0,0,1-4.8-1.6l-14.4-10.8,0,0L112,104v32a8,8,0,0,1-12.8,6.4L48,104Z"/></svg></span>Industria, energía y producción</h3>
+        <ul class="mt-3 divide-y divide-tinta/10 border-y border-tinta/10">
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Procesos Acuícolas</p>
+            <p class="text-tinta/75">Pisciculturas, hatcheries, centros de engorda, plantas de proceso y laboratorios de patología.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-procesos-acuicolas/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/06/Folleto-Digital-TNS-Procesos-Acuicolas-comprimido.pdf">Folleto PDF</a></p>
+          </li>
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Electricidad</p>
+            <p class="text-tinta/75">Constructoras y contratistas en baja, media y alta tensión, mantenimiento y montaje industrial.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-electricidad/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/06/Folleto-Digital-TNS-Electricidad-compressed.pdf">Folleto PDF</a></p>
+          </li>
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Automatización y Robótica Industrial</p>
+            <p class="text-tinta/75">Pesca industrial, minería, energía, sanitarias, alimentos y transporte.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-automatizacion-y-robotica-industrial/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/06/Folleto-Digital-TNS-Automatizaion.pdf">Folleto PDF</a></p>
+          </li>
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Construcción y Obras Civiles</p>
+            <p class="text-tinta/75">Constructoras, inmobiliarias y consultoras, como dibujante, proyectista o supervisor de obras.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-construccion-civil/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/06/Folleto-Digital-TNS-Construccion-Civil-compressed.pdf">Folleto PDF</a></p>
+          </li>
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Veterinaria y Producción Agropecuaria</p>
+            <p class="text-tinta/75">Asistencia clínica de animales menores y mayores, y empresas de producción animal.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-veterinaria-y-produccion-agropecuaria/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2026/09/TNS_Veterinaria_Brochure_Corregido.pdf">Folleto PDF</a></p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="flex items-center gap-3 font-display text-[1.2375rem] font-semibold text-turquesa-osc"><span class="grid size-11 shrink-0 place-items-center rounded-xl bg-turquesa/15"><svg aria-hidden="true" class="size-7" viewBox="0 0 256 256" fill="currentColor"><path d="M224,118.31V200a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V118.31h0A191.14,191.14,0,0,0,128,144,191.08,191.08,0,0,0,224,118.31Z" opacity="0.2"/><path d="M104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112ZM232,72V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56H80V48a24,24,0,0,1,24-24h48a24,24,0,0,1,24,24v8h40A16,16,0,0,1,232,72ZM96,56h64V48a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8ZM40,72v41.62A184.07,184.07,0,0,0,128,136a184,184,0,0,0,88-22.39V72ZM216,200V131.63A200.25,200.25,0,0,1,128,152a200.19,200.19,0,0,1-88-20.36V200H216Z"/></svg></span>Servicios y gestión</h3>
+        <ul class="mt-3 divide-y divide-tinta/10 border-y border-tinta/10">
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Turismo</p>
+            <p class="text-tinta/75">Agencias, tour operadores, hoteles, cruceros, transporte y oficinas de turismo.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-turismo/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/06/Folleto-Digital-TNS-Turismo-comprimido.pdf">Folleto PDF</a></p>
+          </li>
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Administración de Empresas</p>
+            <p class="text-tinta/75">Asistente, coordinador, analista o ejecutivo en empresas públicas y privadas.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-administracion-de-empresas/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/06/Folleto-digital-TNS-Administracion-Empresas.pdf">Folleto PDF</a></p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="flex items-center gap-3 font-display text-[1.2375rem] font-semibold text-turquesa-osc"><span class="grid size-11 shrink-0 place-items-center rounded-xl bg-turquesa/15"><svg aria-hidden="true" class="size-7" viewBox="0 0 256 256" fill="currentColor"><path d="M16,152H48v56H16a8,8,0,0,1-8-8V160A8,8,0,0,1,16,152ZM192.54,40A39.12,39.12,0,0,0,156,64a39.12,39.12,0,0,0-36.54-24C97.67,40,80,58.31,80,80c0,14.56,7,27.71,16.73,40H140a20,20,0,0,1,0,40h4l37.78-8.68C203.82,135.07,232,109.23,232,80,232,58.31,214.33,40,192.54,40Z" opacity="0.2"/><path d="M230.33,141.06a24.34,24.34,0,0,0-18.61-4.77C230.5,117.33,240,98.48,240,80c0-26.47-21.29-48-47.46-48A47.58,47.58,0,0,0,156,48.75,47.58,47.58,0,0,0,119.46,32C93.29,32,72,53.53,72,80c0,11,3.24,21.69,10.06,33a31.87,31.87,0,0,0-14.75,8.4L44.69,144H16A16,16,0,0,0,0,160v40a16,16,0,0,0,16,16H120a7.93,7.93,0,0,0,1.94-.24l64-16a6.94,6.94,0,0,0,1.19-.4L226,182.82l.44-.2a24.6,24.6,0,0,0,3.93-41.56ZM119.46,48A31.15,31.15,0,0,1,148.6,67a8,8,0,0,0,14.8,0,31.15,31.15,0,0,1,29.14-19C209.59,48,224,62.65,224,80c0,19.51-15.79,41.58-45.66,63.9l-11.09,2.55A28,28,0,0,0,140,112H100.68C92.05,100.36,88,90.12,88,80,88,62.65,102.41,48,119.46,48ZM16,160H40v40H16Zm203.43,8.21-38,16.18L119,200H56V155.31l22.63-22.62A15.86,15.86,0,0,1,89.94,128H140a12,12,0,0,1,0,24H112a8,8,0,0,0,0,16h32a8.32,8.32,0,0,0,1.79-.2l67-15.41.31-.08a8.6,8.6,0,0,1,6.3,15.9Z"/></svg></span>Salud y educación</h3>
+        <ul class="mt-3 divide-y divide-tinta/10 border-y border-tinta/10">
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Enfermería</p>
+            <p class="text-tinta/75">Hospitales, clínicas, SAMU, SAPU, SAR y atención primaria, públicos o privados.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-enfermeria/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/07/Brochure-TNS-Enfermeria_compressed.pdf">Folleto PDF</a></p>
+          </li>
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Educación de Párvulos y Primer Ciclo de Educación General Básica</p>
+            <p class="text-tinta/75">JUNJI, Integra, SLEP, jardines particulares y escuelas desde NT1 hasta 4.º básico.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-educacion-de-parvulos/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/07/Brochure-TNS-Educacion-de-Parvulos.pdf">Folleto PDF</a></p>
+          </li>
+          <li class="py-5 grid gap-3 md:grid-cols-[1fr_1.4fr_auto] md:items-center">
+            <p class="font-display text-base font-semibold">Educación Diferencial</p>
+            <p class="text-tinta/75">Jardines, colegios con PIE, escuelas especiales y programas de educación de adultos.</p>
+            <p class="flex gap-5 text-sm font-semibold"><a class="inline-flex items-center gap-1.5 min-h-11 text-turquesa-osc hover:underline" href="https://cftestataldeaysen.cl/tns-en-educacion-diferencial/"><svg aria-hidden="true" class="size-3.5" viewBox="0 0 12 12"><path fill="currentColor" d="M3 1h8v8H8.5V5.3L2.8 11 1 9.2 6.7 3.5H3z"/></svg>Ver carrera</a><a class="inline-flex items-center min-h-11 hover:underline" href="https://cftestataldeaysen.cl/wp-content/uploads/2025/07/Brochure-TNS-Educacion-Diferencial.pdf">Folleto PDF</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sedes -->
+  <section id="sedes" class="bg-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-20">
+      <h2 class="font-display text-4xl sm:text-5xl tracking-tight"><span class="font-extralight">Conoce</span> <span class="font-extrabold">nuestras sedes</span></h2>
+
+      <div class="mt-10 grid gap-10 md:grid-cols-2">
+        <article>
+          <iframe title="Mapa de la Casa Central en Puerto Aysén" class="w-full aspect-[4/3] rounded-2xl border-0 bg-niebla" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5601.746744582435!2d-72.686926!3d-45.411893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbd8cd0a86687fa37%3A0x6e12459c6e6390a9!2sLago%20Portales%20301%2C%20Puerto%20Aysen%2C%20Ays%C3%A9n!5e0!3m2!1ses-419!2scl!4v1770054164502!5m2!1ses-419!2scl"></iframe>
+          <h3 class="mt-5 font-display text-2xl font-semibold">Puerto Aysén, Casa Central</h3>
+          <p class="mt-1">Lago Portales #301</p>
+          <p class="mt-1">Informaciones: <a class="font-semibold text-turquesa-osc hover:underline" href="tel:+56672331724">67 233 1724</a></p>
+        </article>
+        <article>
+          <iframe title="Mapa de la sede Coyhaique" class="w-full aspect-[4/3] rounded-2xl border-0 bg-niebla" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.115573640985!2d-72.06934332388988!3d-45.56811441565215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdf2c4b8e2c69317%3A0x6643261e5217e0ce!2sJos%C3%A9%20Miguel%20Carrera%20133%2C%205951337%20Coyhaique%2C%20Ays%C3%A9n!5e0!3m2!1ses-419!2scl!4v1770054224074!5m2!1ses-419!2scl"></iframe>
+          <h3 class="mt-5 font-display text-2xl font-semibold">Sede Coyhaique</h3>
+          <p class="mt-1">José Miguel Carrera #133, Coyhaique</p>
+          <p class="mt-1">Informaciones: <a class="font-semibold text-turquesa-osc hover:underline" href="tel:+56932099908">+569 3209 9908</a></p>
+        </article>
+      </div>
+
+      <h3 class="mt-16 font-display text-lg font-semibold text-turquesa-osc">Otras dependencias</h3>
+      <dl class="mt-3 grid gap-px bg-tinta/10 border-y border-tinta/10 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white py-5 sm:pr-6">
+          <dt class="font-semibold">Dirección Económica y Administrativa</dt>
+          <dd class="mt-1 text-tinta/75">Sargento Aldea #533</dd>
+        </div>
+        <div class="bg-white py-5 sm:px-6">
+          <dt class="font-semibold">Centro Evaluador y Certificación de Competencias Laborales</dt>
+          <dd class="mt-1 text-tinta/75">21 de Mayo #201<br><a class="text-turquesa-osc hover:underline" href="tel:+56672211130">67 2211130</a></dd>
+        </div>
+        <div class="bg-white py-5 lg:pl-6">
+          <dt class="font-semibold">Futuro edificio</dt>
+          <dd class="mt-1 text-tinta/75">Calle Luis Alfredo Bustos, esquina Ciro Arredondo, Puerto Aysén</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Contacto y CTA final -->
+  <section id="contacto" class="bg-marino text-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-20 grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+      <div>
+        <h2 class="font-display text-4xl sm:text-6xl tracking-tight leading-[1.05]">
+          <span class="block font-extralight">¿Tienes dudas?</span>
+          <span class="block font-extrabold">Te ayudamos a postular</span>
+        </h2>
+        <p class="mt-5 max-w-md text-white/80">El equipo de Admisión y Comunicaciones responde tus preguntas sobre carreras, sedes y beneficios estudiantiles.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="https://campusvirtual.aysencft.cl/contacto/" class="min-h-12 inline-flex items-center rounded-full border border-white/40 px-7 font-semibold hover:border-white transition-colors">Enviar una consulta</a>
+        </div>
+      </div>
+      <ul class="grid gap-px bg-white/15 rounded-2xl overflow-hidden">
+        <li class="bg-marino-2/40 p-5">
+          <p class="text-sm text-white/70">Admisión y Comunicaciones</p>
+          <a href="tel:+56921142085" class="font-display text-2xl font-semibold hover:text-lima">+569 2114 2085</a>
+        </li>
+        <li class="bg-marino-2/40 p-5">
+          <p class="text-sm text-white/70">WhatsApp</p>
+          <!-- Número tomado del botón de WhatsApp de cftestataldeaysen.cl -->
+          <a href="https://wa.me/56921142985?text=Hola%20CFT%20Estatal%20de%20Ays%C3%A9n%2C%20quiero%20informaci%C3%B3n%20sobre%20Admisi%C3%B3n%202027." class="font-display text-2xl font-semibold hover:text-lima">Escríbenos por WhatsApp</a>
+        </li>
+        <li class="bg-marino-2/40 p-5">
+          <p class="text-sm text-white/70">Becas y beneficios</p>
+          <a href="https://cftestataldeaysen.cl/proceso-de-postulacion-a-beneficios-estudiantiles/" class="font-display text-2xl font-semibold hover:text-lima">Beneficios estudiantiles</a>
+        </li>
+      </ul>
+
+      <div class="lg:col-span-2 border-t border-white/15 pt-12">
+        <h3 class="font-display text-2xl font-semibold">Escríbele a una ejecutiva de admisión</h3>
+        <!-- Avatares: reemplazar img/ejecutivas/*.svg por fotos cuadradas de 400×400 px (WebP o JPG) y actualizar el src -->
+        <ul class="mt-6 grid gap-6 sm:grid-cols-2">
+          <li class="flex items-center gap-5">
+            <img src="img/ejecutivas/h-manzur.svg" alt="" width="400" height="400" loading="lazy" class="size-20 shrink-0 rounded-full object-cover ring-2 ring-turquesa">
+            <div class="min-w-0">
+              <p class="font-display text-xl font-semibold">Heamna Manzur V.</p>
+              <a href="mailto:h.manzur@aysencft.cl?subject=Consulta%20Admisi%C3%B3n%202027" class="inline-flex min-h-11 items-center break-all text-lima hover:underline">h.manzur@aysencft.cl</a>
+            </div>
+          </li>
+          <li class="flex items-center gap-5">
+            <img src="img/ejecutivas/m-cruz.svg" alt="" width="400" height="400" loading="lazy" class="size-20 shrink-0 rounded-full object-cover ring-2 ring-turquesa">
+            <div class="min-w-0">
+              <p class="font-display text-xl font-semibold">Marión Cruz</p>
+              <a href="mailto:m.cruz@aysencft.cl?subject=Consulta%20Admisi%C3%B3n%202027" class="inline-flex min-h-11 items-center break-all text-lima hover:underline">m.cruz@aysencft.cl</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-10 flex flex-col sm:flex-row gap-6 sm:items-center justify-between text-sm text-tinta/70">
+    <img src="img/logo.webp" alt="CFT Estatal Región de Aysén" width="698" height="196" loading="lazy" class="h-10 w-auto">
+    <p>Centro de Formación Técnica Estatal de la Región de Aysén<br><a class="hover:underline" href="https://cftestataldeaysen.cl/">cftestataldeaysen.cl</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
